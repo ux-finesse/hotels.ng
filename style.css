@@ -345,7 +345,7 @@ ul {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-image: url("/assets/v7-homepage1.jpg");
+  background-image: url("assets/v7-homepage1.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
