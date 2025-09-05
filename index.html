@@ -35,7 +35,7 @@
                 <img src="/assets/whatsapp-icon.png" alt="whatsapp" />
               </li>
             </a>
-            <li class="booking">
+            <li class="booking" onclick="toggleDropdown()">
               <div class="booking_cnt">
                 <img src="/assets/navbar-contact-min.jpg" alt="cc" />
                 <div class="booking_text">
@@ -163,7 +163,7 @@
                 </div>
               </div>
             </li>
-            <li class="currency">
+            <li class="currency" onclick="toggleDropdown()">
               <img src="/assets/nigeria-flag.svg" alt="nigeria-flag" />
               <div class="currency_note">
                 <span>₦</span>
@@ -201,7 +201,7 @@
                 </div>
               </div>
             </li>
-            <li class="account">
+            <li class="account" onclick="toggleDropdown()">
               <img src="/assets/profile-circle-icon.png" alt="nigeria-flag" />
               <div class="account_txt">
                 <span>Account</span>
@@ -247,21 +247,21 @@
             <div class="overlay"></div>
           </div>
         </div>
-        <form class="search_form">
-          <div class="search">
-            <img src="/assets/search.png" alt="search_icon" />
-            <input
-              type="text"
-              placeholder="Search for a city or a particular hotel"
-            />
-          </div>
-          <div class="calender">
-            <img src="/assets/calendar.png" alt="" />
-            <input type="text" placeholder="Thu, 04 Sep - Fri, 05 Sep" />
-          </div>
-          <button>Find Hotels</button>
-        </form>
       </section>
+      <form class="search_form">
+        <div class="search">
+          <img src="/assets/search.png" alt="search_icon" />
+          <input
+            type="text"
+            placeholder="Search for a city or a particular hotel"
+          />
+        </div>
+        <div class="calender">
+          <img src="/assets/calendar.png" alt="" />
+          <input type="text" placeholder="Thu, 04 Sep - Fri, 05 Sep" />
+        </div>
+        <button>Find Hotels</button>
+      </form>
 
       <section class="dest">
         <div class="dest_cont">
@@ -922,6 +922,6 @@
         </div>
       </div>
     </footer>
-    
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

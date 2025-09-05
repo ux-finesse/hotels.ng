@@ -64,6 +64,7 @@ ul {
 }
 .booking {
   position: relative;
+  cursor: pointer;
 }
 
 .booking_cnt {
@@ -143,6 +144,7 @@ ul {
   align-items: center;
   padding: 10px 15px;
   border-right: 1px solid #ffffff;
+  cursor: pointer;
 }
 
 .account {
@@ -151,17 +153,10 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
-.account:hover .acc_drp {
-  display: flex;
-}
-
-.currency:hover .cur_drp {
-  display: flex;
-}
-
-.booking:hover .buk_drp {
+.cur_drp.show, .acc_drp.show, .buk_drp.show  {
   display: block;
 }
 
@@ -377,19 +372,20 @@ ul {
 /* form styles */
 
 .search_form {
-  position: absolute;
+  position: sticky;
   display: flex;
   gap: 5px;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
   background-color: #ffffff;
   padding: 40px 55px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 100%;
   color: #4f4f4f;
   font-size: 14px;
-  z-index: 1;
+  z-index: 1000;
+  justify-self: center;
+  max-width: 80vw;
+  margin: -60px auto 0;
 }
 
 .search {
