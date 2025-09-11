@@ -1,4 +1,4 @@
-// Attach click handler to each dropdown trigger
+// Web Dropdowns
 document
   .querySelectorAll("li.booking, li.currency, li.account, .num")
   .forEach((item) => {
@@ -29,6 +29,8 @@ window.addEventListener("click", () => {
     });
 });
 
+
+// Mobile Menu
 const menuButton = document.getElementById("menu");
 const menuCont = document.querySelector(".menu_cont");
 const closeBtn = document.querySelector(".menu_cont .close");
@@ -56,6 +58,8 @@ window.addEventListener("click", (e) => {
 // Prevent internal clicks from bubbling up
 menuCont.addEventListener("click", (e) => e.stopPropagation());
 
+
+// Mobile Currency Dropdown
 const mobCur = document.querySelector(".mob_cur");
 const mobCurDrp = document.querySelector(".mob_cur_drp");
 
